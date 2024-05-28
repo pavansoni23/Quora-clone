@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: black; */
+    color: white;
+    margin: 0.5rem;
+}
+
+div{
+    background-color: #535353f5;
+    width: 40vw;
+    border-radius: 0.8rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+h1{
+    color: maroon;
+    text-decoration: underline;
+    margin: 0.5rem;
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    font-style: italic;
+}
+
+#create{
+    margin: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+img{
+    width: 39vw;
+    border-radius: 0.8rem;
+}
+
+form{
+    display: inline-block;
+}

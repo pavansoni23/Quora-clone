@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+</head>
+<body>
+    <h2>Create new post</h2>
+
+    <form method="POST" action="/posts">
+        <label for="username">Username : </label>
+        <input type="text"  name="username" id="user" placeholder="enter username"> <br><br>
+
+        <label for="img">Image url : </label>
+        <input type="text" name="image" id="img" placeholder="enter image url"> <br><br>
+
+        <label for="cont">Content : </label>
+        <textarea name="content" placeholder="enter content"  id="cont"  rows="2" cols="75"></textarea> <br><br>
+
+        <button>Add Post</button>
+    </form>
+</body>
+</html>

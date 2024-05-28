@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Quora</h1>
+
+    <form method="GET" action="/posts/new">
+        <button id="create">Create New Post</button>
+    </form>
+
+
+    <% for(data of allData) { %>
+        <div>
+            <h3><a href="http://localhost:8080/posts/<%= data._id %>">@<%= data.username %></a></h3>
+            <img src="<%= data.image %>" alt="img">
+            <p><%= data.content %></p>
+
+            <form method="GET" action="/posts/<%= data._id%>/edit">
+                <button>Edit post</button>
+            </form>
+
+            <form method="POST" action="/posts/<%= data._id%>?_method=DELETE">
+                <button>Delete post</button>
+            </form>
+        </div>
+    <% } %>
+
+</body>
+
+</html>

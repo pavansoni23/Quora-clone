@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+
+</head>
+<body>
+    <h2>Edit Post : <%= data._id%></h2>
+
+    <h3>Username : @<%= data.username %></h3>
+
+    <form method="POST" action="/posts/<%= data._id%>?_method=PATCH">
+        <label for="img">Enter new image url : </label>
+        <input type="text" name="image" id="img"> <br><br>
+
+
+        <textarea name="content" rows="2" cols="75"><%= data.content %></textarea> <br><br>
+        <button>Edit</button>
+    </form>
+</body>
+</html>
